@@ -1,0 +1,6 @@
+projekt\model\Model.class
+hu\unideb\inf\szekfoglalo_maven_fx\MainApp.class
+projekt\model\Show.class
+projekt\model\User.class
+projekt\view\FXMLProjektController.class
+projekt\model\Seat.class

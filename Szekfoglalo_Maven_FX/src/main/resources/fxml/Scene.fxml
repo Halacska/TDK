@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="945.0" styleClass="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.view.FXMLProjektController">
+   <children>
+      <TabPane fx:id="tp" layoutX="-118.0" layoutY="100.0" prefHeight="600.0" prefWidth="655.0" styleClass="AnchorPane" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Login">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="AnchorPane">
+                     <children>
+                        <TextField fx:id="username" layoutX="212.0" layoutY="158.0" prefHeight="48.0" prefWidth="194.0" promptText="Username" />
+                        <Button layoutX="337.0" layoutY="287.0" mnemonicParsing="false" onAction="#Login" prefHeight="35.0" prefWidth="83.0" styleClass="loginbutton" text="Sign In" textFill="WHITE" />
+                        <Button layoutX="179.0" layoutY="287.0" mnemonicParsing="false" onAction="#Registration" prefHeight="35.0" prefWidth="83.0" text="Registration" />
+                        <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="271.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/icons8-registration-50.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="426.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/icons8-enter-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="211.0" layoutY="111.0" prefHeight="46.0" prefWidth="194.0" text="LOGIN" textFill="#272727">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="password" layoutX="212.0" layoutY="223.0" prefHeight="48.0" prefWidth="194.0" promptText="Password" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Movies">
+            <content>
+              <AnchorPane prefHeight="571.0" prefWidth="668.0" style="-fx-border-width: 0 0 0 1;" styleClass="AnchorPane">
+                     <children>
+                        <Button fx:id="endgame" layoutX="46.0" layoutY="174.0" mnemonicParsing="false" onAction="#button0" prefHeight="40.0" prefWidth="155.0" styleClass="filmbutton" text="Endgame">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="captm" layoutX="231.0" layoutY="174.0" mnemonicParsing="false" onAction="#button1" prefHeight="40.0" prefWidth="155.0" styleClass="filmbutton" text="Captain Marvel">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="pets" layoutX="416.0" layoutY="174.0" mnemonicParsing="false" onAction="#button2" prefHeight="40.0" prefWidth="155.0" styleClass="filmbutton" text="Pet Sematary">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/endgame.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="258.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/marvel.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="445.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/pet.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="booking_tab" text="Booking">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="gp" layoutX="186.0" layoutY="105.0" prefHeight="392.0" prefWidth="420.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <Button layoutX="67.0" layoutY="266.0" mnemonicParsing="false" onAction="#deleteButtonPushed" prefHeight="35.0" prefWidth="83.0" styleClass="deletebutton" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="12.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/icons8-trash-can-50.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="67.0" layoutY="215.0" mnemonicParsing="false" onAction="#bookButtonPushed" prefHeight="35.0" prefWidth="83.0" styleClass="bookingbutton" text="Save" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="14.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/icons8-bookmark-50.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="67.0" layoutY="510.0" mnemonicParsing="false" onAction="#ret" prefHeight="35.0" prefWidth="83.0" styleClass="returnbutton" text="Return">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="14.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/icons8-left-50.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="image" fitHeight="150.0" fitWidth="120.0" layoutX="30.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="ngyk" fitHeight="83.0" fitWidth="459.0" layoutX="173.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/kep1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="kcsk" fitHeight="55.0" fitWidth="380.0" layoutX="186.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/kep1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="689.0" layoutY="14.0" prefHeight="35.0" prefWidth="123.0" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="username_label" alignment="CENTER" layoutX="805.0" layoutY="14.0" prefHeight="35.0" prefWidth="123.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="seats_label" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="675.0" layoutY="119.0" prefHeight="190.0" prefWidth="260.0" textAlignment="JUSTIFY" wrapText="true" />
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="656.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8-contacts-50-2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logout_btn" cancelButton="true" layoutX="805.0" layoutY="533.0" mnemonicParsing="false" onAction="#Logout" prefHeight="35.0" prefWidth="83.0" styleClass="loginbutton" text="Sign Out" textFill="WHITE" />
+      <ImageView fx:id="logout_img" fitHeight="35.0" fitWidth="36.0" layoutX="896.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons8-exit-50.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="message_label" alignment="CENTER" contentDisplay="CENTER" layoutX="708.0" layoutY="81.0" prefHeight="48.0" prefWidth="194.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
